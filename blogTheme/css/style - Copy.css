@@ -1,0 +1,304 @@
+﻿
+#footer {
+    background-color: #333333;
+    color: #CCCCCC;
+}
+.marketing {
+    color: #5A5A5A;
+}
+.marketing h1 {
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin: 10px 0;
+}
+.marketing h2 {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+.marketing .marketing-byline {
+    color: #999999;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 40px;
+}
+.marketing p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.marketing img {
+    margin: 5px auto;
+}
+ul.tagcloud {
+    line-height: 1.8;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0.5em;
+    text-align: justify;
+}
+ul.tagcloud li {
+    display: inline;
+}
+ul.tagcloud a {
+    color: #787870;
+    line-height: 1.3em;
+    margin-right: 0.2em;
+    text-decoration: none;
+}
+.tag1 {
+    font-size: 80%;
+}
+.tag2 {
+    font-size: 100%;
+}
+.tag3 {
+    font-size: 125%;
+}
+.tag4 {
+    font-size: 150%;
+}
+.tag5 {
+    font-size: 175%;
+}
+.tag6 {
+    font-size: 200%;
+}
+.tag7 {
+    font-size: 225%;
+}
+.tag8 {
+    font-size: 250%;
+}
+.tag9 {
+    font-size: 275%;
+}
+.tag10 {
+    font-size: 200%;
+}
+*, *:after, *:before {
+    -moz-box-sizing: border-box;
+}
+body, html {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.icon-drop:before, .icon-arrow-left:before {
+    color: #47A3DA;
+    font-style: normal;
+    font-weight: normal;
+    height: 100%;
+    line-height: 2;
+    padding-left: 8px;
+    position: absolute;
+    text-align: center;
+    text-indent: 8000px;
+    top: 0;
+    width: 100%;
+}
+.container > header nav a:hover:before {
+    color: #FFFFFF;
+}
+.icon-drop:before {
+    content: "";
+}
+.icon-arrow-left:before {
+    content: "";
+}
+@font-face {
+    font-family: "ecoico";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/timelineicons/ecoico.eot?#iefix") format("embedded-opentype"), url("../fonts/timelineicons/ecoico.woff") format("woff"), url("../fonts/timelineicons/ecoico.ttf") format("truetype"), url("../fonts/timelineicons/ecoico.svg#ecoico") format("svg");
+}
+.cbp_tmtimeline {
+    list-style: none outside none;
+    margin: 60px 0 0;
+    padding: 0;
+    position: relative;
+}
+.cbp_tmtimeline li {
+    position: relative;
+}
+.cbp_tmtimeline:before {
+    background: none repeat scroll 0 0 #DCDCDC;
+    bottom: 0;
+    content: "";
+    left: 20%;
+    margin-left: -10px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+.cbp_tmtimeline > li .cbp_tmtime {
+    display: block;
+    line-height: 2em;
+    padding-right: 100px;
+    position: absolute;
+    width: 25%;
+}
+.cbp_tmtimeline > li .cbp_tmtime span {
+    display: block;
+    text-align: right;
+}
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+    color: #999999;
+    font-size: 0.9em;
+}
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    color: #333333;
+    font-size: 2.9em;
+}
+.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
+    color: #777777;
+}
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    letter-spacing: -2px;
+    margin-top: 0;
+    padding: 0 0 10px;
+}
+.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmlabel {
+    background: none repeat scroll 0 0 #DCDCDC;
+}
+.cbp_tmtimeline > li .cbp_tmlabel p {
+    padding: 30px 60px 10px 50px;
+}
+.cbp_tmtimeline > li .cbp_tmlabel {
+    background: none repeat scroll 0 0 #777777;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 25px 25%;
+    padding: 2em;
+    position: relative;border-left: 12px solid #29A9DF;
+}
+.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmlabel:after {
+    border-right-color: #DCDCDC;
+}
+.cbp_tmtimeline > li .cbp_tmicon {
+    background: none repeat scroll 0 0 #29A9DF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #DCDCDC;
+    color: #FFFFFF;
+    font-family: 'ecoico';
+    font-size: 1.4em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 40px;
+    left: 20%;
+    line-height: 40px;
+    margin: 0 0 0 -25px;
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+    top: 0;
+    width: 40px;
+}
+.cbp_tmicon-phone:before {
+    content: "";
+}
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgba(0, 0, 0, 0) #777777 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-image: none;
+    border-style: solid;
+    border-width: 10px;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 100%;
+    top: 10px;
+    width: 0;
+}
+.cbp_tmicon-screen:before {
+    content: "";
+}
+.cbp_tmicon-mail:before {
+    content: "";
+}
+.cbp_tmicon-earth:before {
+    content: "";
+}
+@media screen and (max-width: 65.375em) {
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    font-size: 1.5em;
+}
+}
+@media screen and (max-width: 47.2em) {
+.cbp_tmtimeline:before {
+    display: none;
+}
+.cbp_tmtimeline > li .cbp_tmtime {
+    padding: 0 0 20px;
+    position: relative;
+    width: 100%;
+}
+.cbp_tmtimeline > li .cbp_tmtime span {
+    text-align: left;
+}
+.cbp_tmtimeline > li .cbp_tmlabel {
+    font-size: 95%;
+    font-weight: 400;
+    margin: 0 0 30px;
+    padding: 1em;
+}
+.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmlabel:after {
+    border-bottom-color: #777777;
+    border-right-color: rgba(0, 0, 0, 0);
+}
+.cbp_tmtimeline > li .cbp_tmicon {
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0;
+    position: relative;
+}
+}
+.pear {
+    background-image: url("../img/pear.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+ .OOOFFF {
+    background: url("../img/bgredtwo.png") repeat fixed 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+}
+ header {
+    background: none repeat scroll 0 0 #c6c1c1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 80px !important;
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    z-index: 2147483647;
+}
+ #header-section222 {
+    background: url("../img/HeaderBG.jpg") no-repeat fixed center top #29a9df;
+    height: 376px;
+    max-width: 100%;
+    padding-top: 0;
+    width: 100%;
+    z-index: -999;
+}
+ body {
+      text-align: right !important;
+    direction: rtl !important;   
+ }

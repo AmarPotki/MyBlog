@@ -1,0 +1,71 @@
+﻿@model MyBlog.Core.Model.Post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Post</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ShortDescription)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ShortDescription)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Meta)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Meta)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UrlSlug)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UrlSlug)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Published)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Published)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PostedOn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PostedOn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Modified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Modified)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
