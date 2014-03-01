@@ -5,6 +5,10 @@ namespace MyBlog.Core.Model
 {
     public class Post : IEntity
     {
+        public Post()
+        {
+            Tags = new List<Tag>();
+        }
         public int Id { get; set; }
 
         public string Title { get; set; }

@@ -1,4 +1,5 @@
-﻿using MyBlog.Core.Model;
+﻿using System.Linq;
+using MyBlog.Core.Model;
 using MyBlog.Core.Repository;
 
 namespace MyBlog.Infrastructure.DataAccess.Repositories
@@ -9,6 +10,10 @@ namespace MyBlog.Infrastructure.DataAccess.Repositories
             : base(databaseFactory)
         {
 
+        }
+        public Tag GetTag(string tag)
+        {
+            return Database.Tags.First(tg => tg.UrlSlug == tag);
         }
     }
 }

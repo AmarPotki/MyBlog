@@ -13,7 +13,7 @@ namespace MyBlog.MVC.Web.BootstrapperTasks
         public void Execute()
         {
             RegisterRoutes(RouteTable.Routes);
-           LogUtility.Log.Info("Configuring Routes.");
+            LogUtility.Log.Info("Configuring Routes.");
         }
 
         public int Priority
@@ -32,6 +32,10 @@ namespace MyBlog.MVC.Web.BootstrapperTasks
             routes.IgnoreRoute("{*allico}", new { allico = @".*\.ico(/.*)?" });
             //THIS IS FOR THE ROOT OF THE SITE IF THE ROOT IS NOT A TEMPLATE PAGE
 
+            routes.MapRoute(
+           "ViewTag", // Route name
+           "Blog/{tag}", // URL with parameters
+          new { controller = "Blog", action = "Tag", tag = "" });
 
             routes.MapRoute(
          "Default", // Route name
@@ -39,6 +43,8 @@ namespace MyBlog.MVC.Web.BootstrapperTasks
          new { controller = "Home", action = "Index", id = UrlParameter.Optional },
          new[] { "MyBlog.MVC.Web.Controllers" }
      );
+
+            //tag
 
 
 
