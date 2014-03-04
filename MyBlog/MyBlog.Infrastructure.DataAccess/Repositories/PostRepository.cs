@@ -23,5 +23,11 @@ namespace MyBlog.Infrastructure.DataAccess.Repositories
             //return Database.Posts.Include("Tags").Where(x => x.Category.Id == categoryId);
             return Database.Posts.Where(x => x.Category.Id == categoryId);
         }
+
+        public Post Post(int year, int month, string urlSlug)
+        {
+            return
+                Database.Posts.Include("Category").Include("Tags").FirstOrDefault(p => p.PostedOn.Year == year && p.PostedOn.Month == month && p.UrlSlug.Equals(urlSlug));
+        }
     }
 }

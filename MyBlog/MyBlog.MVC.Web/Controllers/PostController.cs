@@ -30,8 +30,8 @@ namespace MyBlog.MVC.Web.Controllers
         {
 
             // this view must filter 
-            // return View(_postRepository.All());
-            return View();
+             return View(_postRepository.All());
+           // return View();
         }
 
         //

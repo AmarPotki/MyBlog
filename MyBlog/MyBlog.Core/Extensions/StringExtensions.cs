@@ -5,7 +5,9 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Web.Mvc;
 using MyBlog.Core.Common;
+using MyBlog.Core.Model;
 
 namespace MyBlog.Core.Extensions
 {
@@ -92,6 +94,12 @@ namespace MyBlog.Core.Extensions
 
             return value.ToLower();
         }
+
+        public static string Href(this Post post, UrlHelper helper)
+        {
+            return helper.RouteUrl(new { controller = "Blog", action = "Post", year = post.PostedOn.Year, month = post.PostedOn.Month, title = post.UrlSlug });
+        }
+
         [DebuggerStepThrough]
         public static string ToAlphaNumeric(this string value)
         {

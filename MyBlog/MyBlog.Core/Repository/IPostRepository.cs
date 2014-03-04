@@ -7,5 +7,6 @@ namespace MyBlog.Core.Repository
     {
         IEnumerable<Post> GetPostsByTag(string urlSlug);
         IEnumerable<Post> GetPostsByCategory(int categoryId);
+        Post Post(int year, int month, string urlSlug);
     }
 }
