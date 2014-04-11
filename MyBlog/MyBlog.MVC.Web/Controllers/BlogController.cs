@@ -23,21 +23,31 @@ namespace MyBlog.MVC.Web.Controllers
         {
             return View();
         }
-
-        public ViewResult Post(int year, int month, string title)
+        public ViewResult Posts(int? year, int? month)
         {
-            var post = _postRepository.Post(year, month, title);
+
+
+            return View(_postRepository.Posts(year, month));
+        }
+        public ViewResult Post(int year, int month, string urlSlug)
+        {
+
+
+            var post = _postRepository.Post(year, month, urlSlug);
 
             if (post == null)
+            {
                 throw new HttpException(404, "Post not found");
 
-            if (post.Published == false && User.Identity.IsAuthenticated == false)
-                throw new HttpException(401, "The post is not published");
+            }
+            // in core  must handle   
+            //if (post.Published == false && User.Identity.IsAuthenticated == false)
+              //  throw new HttpException(401, "The post is not published");
 
             return View(post);
         }
 
-        public  ActionResult Tag(string tag)
+        public ActionResult Tag(string tag)
         {
             var posts = _postRepository.GetPostsByTag(tag);
             return View();

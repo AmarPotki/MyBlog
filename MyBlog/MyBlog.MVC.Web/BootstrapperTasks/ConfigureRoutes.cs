@@ -35,7 +35,24 @@ namespace MyBlog.MVC.Web.BootstrapperTasks
             routes.MapRoute(
            "ViewTag", // Route name
            "Blog/{tag}", // URL with parameters
-          new { controller = "Blog", action = "Tag", tag = "" });
+          new { controller = "Blog", action = "Tag" });
+
+            routes.MapRoute(
+            "Archive",
+            "Blog/Archive/{year}/{month}",
+            new { controller = "Blog", action = "Posts", year = UrlParameter.Optional, month = UrlParameter.Optional });
+
+            routes.MapRoute(
+            "Post",
+            "Blog/Archive/{year}/{month}/{urlSlug}",
+            new { controller = "Blog", action = "Post" });
+
+
+
+            routes.MapRoute(
+             "Blog",
+             "Blog/",
+             new { controller = "Blog", action = "Posts", year = UrlParameter.Optional, month = UrlParameter.Optional });
 
             routes.MapRoute(
          "Default", // Route name

@@ -29,5 +29,19 @@ namespace MyBlog.Infrastructure.DataAccess.Repositories
             return
                 Database.Posts.Include("Category").Include("Tags").FirstOrDefault(p => p.PostedOn.Year == year && p.PostedOn.Month == month && p.UrlSlug.Equals(urlSlug));
         }
+
+        public IEnumerable<Post> Posts(int? year, int? month)
+        {
+            if (year != null && month != null)
+                return Database.Posts.Include("Category").Include("Tags").Where(p => p.PostedOn.Year == year && p.PostedOn.Month == month);
+            return Database.Posts.Include("Category").Include("Tags").Take(10);
+        }
+
+        public IEnumerable<Post> Posts()
+        {
+            return
+                Database.Posts.Include("Category").Include("Tags").Take(10);
+
+        }
     }
 }

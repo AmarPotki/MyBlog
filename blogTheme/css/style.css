@@ -305,6 +305,14 @@ body, html {
     width: 100%;
     z-index: -999;
 }
+  #header-section-post {
+    background: url("../img/HeaderBG22.jpg") no-repeat fixed center top #29a9df;
+    height: 220px;
+    max-width: 100%;
+    padding-top: 0;
+    width: 100%;
+    z-index: -999;
+}
  /*این بکگراند هم مبشه
      #header-section222 {
     background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 0.1em, rgba(0, 0, 0, 0) 0.1em, rgba(0, 0, 0, 0) 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 0.1em, rgba(0, 0, 0, 0) 0.1em, rgba(0, 0, 0, 0) 60px), linear-gradient(60deg, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(120deg, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
@@ -411,12 +419,109 @@ ul.tagcloud a {
     line-height: 1.3em;
     margin-right: 0.2em;
     text-decoration: none;
-}.icon-time {
-    background: url("../img/icon-line.png") repeat-x scroll center center rgba(0, 0, 0, 0);
+}.icon-time-tags {
+    background: url("../img/Tags.jpg") no-repeat scroll right center rgba(0, 0, 0, 0);
     display: block;
-    height: 64px;
-    margin: 10px auto;
+    height: 26px;
+    margin: 0 !important;
     width: 100%;
-}.icon-time img {
-    background: none repeat scroll 0 0 #ffffff;
+    margin-bottom: -15px;
+}.Tags {
+    margin-bottom: -15px !important;
+}.icon-time-viewpoint {
+    background: url("../img/ViewPoint.jpg") no-repeat scroll right center rgba(0, 0, 0, 0);
+    display: block;
+    height: 26px;
+    margin: 0 !important;
+    width: 100%;
+    margin-bottom: -15px;
+}.ViewPoint {
+
+}
+.PostSection
+{
+    margin-top:5px;
+}
+ .post-table.blue {
+    border: 6px solid #29A9DF;
+    font-weight: 400;
+    text-align: center;
+}
+.post-table-header .heading {
+    display: inline-block;
+    padding: 8px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.post-table.dark-blue .heading {
+    background: none repeat scroll 0 0 #34495E;
+}
+.post-table.blue .heading {
+    background: none repeat scroll 0 0 #29A9DF;
+}
+.post-table:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.post-table-sign-up {
+    background: none repeat scroll 0 0 #EEEEEE !important;
+    border-top: 1px solid #BDC3C7;
+    direction: rtl;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+
+
+
+.post-table2.blue2 {
+    border: 6px solid #717171;
+    font-weight: 400;
+    text-align: center;
+}
+.post-table-header2 .heading {
+    display: inline-block;
+    padding: 8px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.post-table2.dark-blue .heading {
+    background: none repeat scroll 0 0 #717171;
+}
+.post-table2.blue2 .heading {
+    background: none repeat scroll 0 0 #717171;
+    color:#ffffff !important;
+}
+.post-table2:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.post-table-sign-up2 {
+    background: none repeat scroll 0 0 #eeeeee !important;
+    border-top: 1px solid #BDC3C7;
+    direction: rtl;
+    padding: 10px 20px;
+    text-align: right;
+}
+.PostIMG {
+    width: 50px;
+    height: 50px;
+}.NameUser{
+    text-align: center !important;
+    color: #fff;
+    padding-top: 13px;
+}
+.OnePost
+{
+    margin-top:30px;
+}.PostContent {
+    border-top: solid 6px #29A9DF;
+    margin-top: 15px;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    padding: 15px;
+    text-align: justify;
+}.DateUser {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 13px;
 }
